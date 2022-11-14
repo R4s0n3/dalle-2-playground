@@ -31,7 +31,7 @@ const imageStyle = {
 
 const submitFormHandler = async event => {
   event.preventDefault()
-  const OPEN_AI_KEY = process.env.REACT_APP_API_KEY
+  const OPEN_AI_KEY = https://github.com/R4s0n3/dalle-2-playground
 
   
   const myPrompt = formState.inputs.prompt.value
