@@ -3,8 +3,8 @@ import './Button.css'
 
 const Button = (props) => {
   return (
-    <div>
-        <button className="p-2 my-2 bg-slate-600 rounded  text-gray-300  hover:bg-slate-700 hover:scale-95 " type={props.type || "button"}>
+    <div style={{cursor:"pointer",pointerEvents: "auto"}}> 
+        <button id={props.id} style={{cursor:"pointer"}} onClick={props.onClick} className={"p-2 my-2 mr-2 cursor-pointer bg-slate-600 rounded  text-gray-300  hover:bg-slate-700 hover:scale-95 " + props.className} type={props.type || "button"} disabled={props.disabled} >
          {props.children}
         </button>
     </div>

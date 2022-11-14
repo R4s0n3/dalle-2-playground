@@ -5,7 +5,7 @@ export const useHttpClient = () => {
     const [error, setError] = useState();
 
     
-    const sendRequest = useCallback(async (url, method = "GET", body = null, headers = {}) => {
+    const sendRequest = useCallback(async ( url, method = "GET", body = null, headers = {}) => {
         setIsLoading(true);
         window.scroll(0, 0);
 
@@ -17,11 +17,15 @@ export const useHttpClient = () => {
             });
             const responseData = await response.json();
 
+           
+
             if(!response.ok){
                 throw new Error(responseData.message);
             }
             setIsLoading(false);
-            return responseData;
+          
+            return responseData
+            
         } catch(err){
             setError(err.message);
             setIsLoading(false)
