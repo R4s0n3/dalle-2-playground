@@ -31,7 +31,7 @@ const imageStyle = {
 
 const submitFormHandler = async event => {
   event.preventDefault()
-  const OPEN_AI_KEY = "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"
+  const OPEN_AI_KEY = process.env.REACT_APP_API_KEY
 
   
   const myPrompt = formState.inputs.prompt.value
