@@ -30,9 +30,6 @@ const imageStyle = {
 
 const submitFormHandler = async event => {
   event.preventDefault()
-  const OPEN_AI_KEY = process.env.REACT_APP_API_KEY
-
-  const myPrompt = formState.inputs.prompt.value
   
   try{
 
@@ -40,7 +37,7 @@ const submitFormHandler = async event => {
       'POST',
       JSON.stringify({
 
-        prompt: myPrompt,
+        prompt: formState.inputs.prompt.value,
         n:1,
         size: "512x512"
 
@@ -48,7 +45,7 @@ const submitFormHandler = async event => {
       {
 
         'content-type': 'application/json',
-        Authorization: "Bearer " + OPEN_AI_KEY
+        Authorization: "Bearer " + process.env.REACT_APP_API_KEY
         
       })
       
