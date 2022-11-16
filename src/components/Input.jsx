@@ -54,7 +54,7 @@ const Input = props => {
     props.element === 'input' ? (
       <input
         id={props.id}
-        className={!inputState.isValid && inputState.isTouched ? "text-red-400 placeholder-red-400 w-full border-2 border-red-500 rounded-md" : "text-gray-500 placeholder-gray-500 w-full border-2 border-violet-900 rounded-md"}
+        className={!inputState.isValid && inputState.isTouched ? "text-red-400 placeholder-red-400 w-full border-2 border-red-500 rounded-md" : "text-gray-500 placeholder-gray-500 w-full border-2 border-violet-800 rounded-md"}
         type={props.type}
         placeholder={props.placeholder}
         onChange={changeHandler}
@@ -65,7 +65,7 @@ const Input = props => {
     ) : (
       <textarea
         id={props.id}
-        className={!inputState.isValid && inputState.isTouched ?  "text-red-400 placeholder-gray-500 w-full border-2 border-red-500 rounded-md " :"text-gray-500 placeholder-gray-500 w-full border-2 border-violet-900 rounded-md"}
+        className={!inputState.isValid && inputState.isTouched ?  "text-red-400 placeholder-gray-500 w-full border-2 border-red-500 rounded-md " :"text-gray-500 placeholder-gray-500 w-full border-2 border-violet-800 rounded-md"}
         placeholder={props.placeholder}
         rows={props.rows || 3}
         onChange={changeHandler}
@@ -79,7 +79,7 @@ const Input = props => {
       className={`form-control w-full ${!inputState.isValid && inputState.isTouched &&
         'form-control--invalid'}`}
     >
-      <label htmlFor={props.id} className={!inputState.isValid && inputState.isTouched ? "text-red-500" : "text-violet-300"} >{props.label}</label>
+      <label htmlFor={props.id} className={!inputState.isValid && inputState.isTouched ? "text-red-500" : "text-violet-800"} >{props.label}</label>
       {element}
       {!inputState.isValid && inputState.isTouched && <p className="my-2 text-red-500">{props.errorText}</p>}
       

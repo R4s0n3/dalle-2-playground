@@ -1,0 +1,2 @@
+const ratios = [{ title: 'Landscape', ratio: "7 / 5", height: "731", width: "1024" }, { title: 'Portrait', ratio: "5 / 7", height: "1024", width: "731" }, { title: 'Square', ratio: "1 / 1", height: "1024", width: "1024" }]
+export default ratios
