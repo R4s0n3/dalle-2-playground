@@ -69,7 +69,7 @@ if(error) return <div className='dark:bg-slate-900 p-5 flex flex-col  justify-ce
 return (
     <div className="dark:bg-slate-900 p-5 flex flex-col  justify-center items-center min-h-screen h-full dark:text-white">
      
-      <h1 className="text-xl lg:text-5xl">✨ Magic AI Image Generator</h1>
+      <h1 className="text-xl lg:text-5xl">✨ Magic AI Image Generator 2</h1>
       <div className="h-10"></div>
         <div className="w-full max-w-lg dark:bg-slate-800 p-4 flex-col  rounded-lg shadow-xl flex justify-start ">
           <div style={{height:420}} className="w-full rounded-md flex items-center justify-center">
